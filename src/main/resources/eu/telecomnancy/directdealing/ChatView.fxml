@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="439.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.ChatController">
+      <center>
+         <ListView fx:id="messages" prefHeight="363.0" prefWidth="279.0" BorderPane.alignment="CENTER" />
+      </center>
+      <bottom>
+         <HBox prefHeight="42.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+            <children>
+               <HBox alignment="CENTER_LEFT" prefHeight="105.0" prefWidth="279.0">
+                  <children>
+                     <TextField fx:id="messageTextField" layoutX="44.0" layoutY="303.0" prefHeight="38.0" prefWidth="224.0" promptText="Envoyer un message" />
+                  </children>
+               </HBox>
+               <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #7C6D67;">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#sendMessage">
+                        <graphic>
+                           <ImageView fitHeight="30.0" fitWidth="30.0">
+                              <Image url="@/send.jpg" />
+                           </ImageView>
+                        </graphic>
+                     </Button>
+                  </children>
+               </HBox>
+            </children>
+         </HBox>
+      </bottom>
+      <top>
+         <HBox prefHeight="50.0" prefWidth="279.0" BorderPane.alignment="CENTER">
+            <children>
+               <HBox alignment="CENTER_LEFT" prefHeight="51.0" prefWidth="122.0" style="-fx-background-color: #7C6D67;">
+                  <children>
+                     <Button mnemonicParsing="false" onAction="#onRetourButtonClicked" prefHeight="25.0" prefWidth="82.0" text="Retour" />
+                  </children>
+                  <HBox.margin>
+                     <Insets left="5.0" />
+                  </HBox.margin>
+               </HBox>
+               <HBox alignment="CENTER" prefHeight="50.0" prefWidth="201.0" style="-fx-background-color: #7C6D67;">
+                  <children>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Chat" />
+                  </children>
+               </HBox>
+            </children>
+         </HBox>
+      </top>
+      <stylesheets>
+         <URL value="@style_chat.css" />
+      </stylesheets>
+   </BorderPane>

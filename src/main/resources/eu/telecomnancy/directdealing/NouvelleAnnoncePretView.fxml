@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.annonce.AnnonceController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="123.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" wrappingWidth="9.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="42.0" fitWidth="43.0" layoutX="74.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../vbuck.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="montant" layoutX="167.0" layoutY="106.0" prefHeight="26.0" prefWidth="177.0" promptText="Veuillez rentrer le montant" />
+            <Text layoutX="361.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Florains" wrappingWidth="61.86328125">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="begin" layoutX="168.0" layoutY="175.0" />
+            <Text layoutX="74.0" layoutY="191.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de début :" />
+            <Text layoutX="74.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de fin :" />
+            <DatePicker fx:id="end" layoutX="167.0" layoutY="235.0" prefHeight="26.0" prefWidth="178.0" />
+            <Button layoutX="245.0" layoutY="301.0" mnemonicParsing="false" onAction="#poster" prefHeight="34.0" prefWidth="124.0" text="Poster !" />
+            <RadioButton fx:id="pret" layoutX="80.0" layoutY="41.0" mnemonicParsing="false" text="Prêt">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="emprunt" layoutX="230.0" layoutY="41.0" mnemonicParsing="false" text="Emprunt">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import java.net.URL?>
+<VBox alignment="TOP_LEFT" spacing="10" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.home.HomeCenterController">
+    <AnchorPane minWidth="600.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+        <children>
+            <ListView fx:id="verticalListView" layoutX="30.0" layoutY="137.0" prefHeight="319.0" prefWidth="580.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="137.0">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </ListView>
+            <Button fx:id="annonceButton" layoutX="602.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleAnnonceButtonClick" prefHeight="59.0" prefWidth="177.0" text="Poster une annonce" />
+            <Button fx:id="pretButton" layoutX="29.0" layoutY="46.0" mnemonicParsing="false" onAction="#handlePretButtonClick" prefHeight="31.0" prefWidth="135.0" text="Prêt" />
+            <Button fx:id="serviceButton" layoutX="29.0" layoutY="88.0" mnemonicParsing="false" onAction="#handleServiceButtonClick" prefHeight="32.0" prefWidth="135.0" text="Service" />
+            <ChoiceBox fx:id="typeChoiceBox" layoutX="232.0" layoutY="36.0" onAction="#handleChoiceBoxAction" prefWidth="150.0" />
+            <Label layoutX="178.0" layoutY="38.0" text="Type:">
+                <font>
+                    <Font size="19.0" />
+                </font>
+            </Label>
+            <TextField fx:id="searchBar" layoutX="351.0" layoutY="95.0" prefHeight="31.0" prefWidth="429.0" />
+            <ImageView fitHeight="32.0" fitWidth="81.0" layoutX="307.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../../../loupe.png" />
+                </image>
+            </ImageView>
+            <Button layoutX="29.0" layoutY="5.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="135.0" text="Toutes les annonces" onAction="#initialize" />
+        </children>
+    </AnchorPane>
+    <stylesheets>
+        <URL value="@style_pret.css" />
+    </stylesheets>
+</VBox>

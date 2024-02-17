@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="439.0" prefWidth="279.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.ListChatsController">
+    <center>
+        <ListView fx:id="listmessages" onMouseClicked="#onChatClicked" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #F1DABF;" BorderPane.alignment="CENTER" />
+    </center>
+   <top>
+      <HBox prefHeight="50.0" prefWidth="279.0" style="-fx-background-color: #7C6D67;" BorderPane.alignment="CENTER">
+         <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="79.0" style="-fx-background-color: #7C6D67;">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#onRetourButtonClicked" prefHeight="25.0" prefWidth="100.0" text="Retour">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin></Button>
+                    </children>
+                </HBox>
+               <HBox alignment="CENTER" prefHeight="50.0" prefWidth="151.0" style="-fx-background-color: #7C6D67;">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Vos chats" />
+                    </children>
+                </HBox>
+         </children>
+      </HBox>
+   </top>
+    <stylesheets>
+        <URL value="@style_chat.css" />
+    </stylesheets>
+</BorderPane>

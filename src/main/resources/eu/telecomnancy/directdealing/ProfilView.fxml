@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.ProfilController">
+   <top>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Votre profil" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" top="20.0" />
+         </BorderPane.margin></Text>
+   </top>
+   <center>
+      <ScrollPane fitToWidth="true" BorderPane.alignment="CENTER">
+         <content>
+            <HBox alignment="TOP_CENTER" minWidth="100">
+               <children>
+                  <VBox>
+                     <children>
+                        <GridPane alignment="TOP_CENTER" hgap="15.0" vgap="15.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+                           </columnConstraints>
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="5.0" GridPane.vgrow="NEVER">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pseudo">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="usernameField" promptText="Username" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" GridPane.columnIndex="1">
+                                 <children>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeUsername" text="Modifier" />
+                                 </children>
+                              </HBox>
+
+                              <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="mailField" promptText="Mail" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeMail" text="Modifier" />
+                                 </children>
+                              </HBox>
+
+
+
+                              <VBox alignment="CENTER_LEFT" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="2">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de téléphone">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="numeroField" promptText="Numero" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                 <children>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeNumero" text="Modifier" />
+                                 </children>
+                              </HBox>
+
+                              <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="138.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="3">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="adresseField" promptText="Adresse" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutX="110.0" layoutY="138.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <children>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeAdresse" text="Modifier" />
+                                 </children>
+                              </HBox>
+
+
+
+                              <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="151.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de passe">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <TextField fx:id="passwordField" promptText="Password" />
+                                 </children>
+                              </VBox>
+                              <HBox alignment="CENTER" layoutX="110.0" layoutY="151.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#changePassword" text="Modifier" />
+                                 </children>
+                              </HBox>
+
+                              <VBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="221.0" prefWidth="100.0" spacing="5.0" GridPane.rowIndex="5">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Photo de profil">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Text>
+                                    <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" onMouseClicked="#imageClick" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@img/page-daccueil.png" />
+                                       </image></ImageView>
+                                 </children>
+                              </VBox>
+                              <HBox alignment="TOP_CENTER" layoutX="110.0" layoutY="221.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <children>
+                                    <Button alignment="CENTER" mnemonicParsing="false" onAction="#changeImage" text="Modifier" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </content>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </ScrollPane>
+   </center>
+   <bottom>
+      <Button mnemonicParsing="false" text="Supprimer votre compte" textAlignment="CENTER" textFill="RED" BorderPane.alignment="CENTER" onAction="#removeUser"/>
+   </bottom>
+</BorderPane>

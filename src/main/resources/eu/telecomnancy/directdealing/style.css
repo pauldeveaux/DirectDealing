@@ -1,0 +1,30 @@
+.root{
+    -fx-background-color: #DAD6D6;
+}
+
+.button{
+    -fx-background-color: #F4AC45;
+    -fx-text-fill: #694A38;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.button:hover{
+    -fx-background-color: #cb8f39;
+    -fx-text-fill: #694A38;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+.button:pressed{
+    -fx-background-color: #644610;
+    -fx-text-fill: #694A38;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}
+
+.button:focused{
+    -fx-background-color: #ecb771;
+    -fx-text-fill: #694A38;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.annonce.NewAnnonceController">
+   <children>
+      <HBox alignment="TOP_CENTER" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox fx:id="pane" alignment="TOP_CENTER" prefHeight="400.0" prefWidth="463.0" spacing="20.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nouvelles Annonces" textAlignment="CENTER">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="426.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="67.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Titre : ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="9.0" prefWidth="363.0">
+                           <children>
+                              <TextField fx:id="title" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="450.0" promptText="veuillez entrer le titre de votre annonce" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" wrappingWidth="78.1640625">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                        <TextArea fx:id="description" prefHeight="72.0" prefWidth="353.0" promptText="Veuillez entrer la description de votre annocne" />
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type d'annonces :">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                        </Text>
+                        <RadioButton fx:id="radio_mat" mnemonicParsing="false" text="Matériel">
+                           <HBox.margin>
+                              <Insets right="80.0" />
+                           </HBox.margin></RadioButton>
+                        <RadioButton fx:id="radio_service" mnemonicParsing="false" text="Service" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+
+   </children>
+</AnchorPane>

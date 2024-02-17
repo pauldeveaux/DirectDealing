@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.deals.DealsController">
+   <children>
+      <AnchorPane fx:id="pane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="annonceView" fitHeight="122.0" fitWidth="206.0" layoutX="82.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../default.png" />
+               </image></ImageView>
+            <Text fx:id="auteur" layoutX="299.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auteur :">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text fx:id="description" layoutX="299.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description :" wrappingWidth="619.0" />
+            <Text layoutX="97.0" layoutY="204.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prix : " />
+            <TextField fx:id="prix" editable="false" layoutX="132.0" layoutY="186.0" prefHeight="26.0" prefWidth="66.0" />
+            <ImageView fitHeight="47.0" fitWidth="48.0" layoutX="202.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image fx:id="img" url="@../../../vbuck.png" />
+               </image>
+            </ImageView>
+            <Text fx:id="adresse" layoutX="302.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse" />
+            <Text fx:id="date" layoutX="304.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date debut : " />
+            <Text fx:id="end" layoutX="304.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date fin : " />
+            <Button fx:id="chat" layoutX="412.0" layoutY="289.0" mnemonicParsing="false" onAction="#openChat" prefHeight="26.0" prefWidth="141.0" text="Ouvrir le chat" />
+            <Button fx:id="deals" layoutX="616.0" layoutY="290.0" mnemonicParsing="false" onAction="#dealHandler" prefHeight="25.0" prefWidth="141.0" text="Proposer un deal" />
+            <Text fx:id="frequency" layoutX="430.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fréquence :" visible="false" />
+            <Text fx:id="type" layoutX="71.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de service " visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

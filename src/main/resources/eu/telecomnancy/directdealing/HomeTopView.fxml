@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+
+<MenuBar fx:id="menuBar" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.home.HomeTopController">
+  <menus>
+    <Menu fx:id="homeMenu" mnemonicParsing="false" text="Home">
+         <items>
+            <MenuItem fx:id="homeItem" mnemonicParsing="false" onAction="#handleHomeMenuItem" text="Home" />
+         </items>
+    </Menu>
+    <Menu fx:id="userMenu" mnemonicParsing="false" text="User">
+      <items>
+        <MenuItem fx:id="activityMenuItem" mnemonicParsing="false" onAction="#handleActivityMenuItem" text="Activité" />
+            <MenuItem fx:id="settingsMenuItem" mnemonicParsing="false" onAction="#handleSettingsMenuItem" text="Paramètres" />
+            <MenuItem fx:id="logoutMenuItem" mnemonicParsing="false" onAction="#handleLogoutMenuItem" text="Déconnexion -&gt;]" />
+      </items>
+    </Menu>
+    <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help" />
+  </menus>
+</MenuBar>

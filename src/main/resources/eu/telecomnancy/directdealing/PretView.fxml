@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.annonce.AnnonceController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" />
+      <BorderPane>
+         <top>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Que voulez-vous poster ?" textAlignment="CENTER" wrappingWidth="279.68359375" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </top>
+         <center>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="196.0" prefWidth="600.0" spacing="50.0">
+                     <children>
+                        <Button fx:id="materiel" mnemonicParsing="false" onAction="#next" prefHeight="163.0" prefWidth="178.0" style="-fx-background-radius: 50" text="Matériel" />
+                        <Button fx:id="service" mnemonicParsing="false" onAction="#next" prefHeight="163.0" prefWidth="178.0" style="-fx-background-radius: 50" text="Service" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

@@ -1,0 +1,26 @@
+#messages {
+    -fx-background-color: #F1DABF; /* Exemple de couleur de fond */
+    -fx-padding: 10; /* Exemple de marge intérieure */
+}
+
+/* Style pour la HBox avec l'ID 'messageInputBox' */
+#messageInputBox {
+    -fx-background-color: #3f2e2e; /* Exemple de couleur de fond */
+    -fx-padding: 5; /* Exemple de marge intérieure */
+}
+
+/* Style pour la HBox avec l'ID 'headerBox' */
+#headerBox {
+    -fx-background-color: #210303; /* Exemple de couleur de fond */
+    -fx-padding: 8; /* Exemple de marge intérieure */
+}
+
+.list-view .list-cell:even {
+    -fx-background-color: #92BFB1;
+    -fx-text-fill: black;
+}
+.list-view .list-cell:odd {
+    -fx-background-color: #5f8f81;
+    -fx-text-fill: black;
+}
+

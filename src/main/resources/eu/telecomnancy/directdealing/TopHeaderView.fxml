@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pane" prefHeight="80.0" prefWidth="600.0" style="-fx-background-color: #5C5857;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.telecomnancy.directdealing.controllers.TopHeaderController">
+   <children>
+      <BorderPane layoutX="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <HBox focusTraversable="true" style="-fx-background-color: yellow;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#switchToHome" prefHeight="41.0" prefWidth="46.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/page-daccueil.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </left>
+         <right>
+            <HBox alignment="TOP_RIGHT" focusTraversable="true" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#switchToNotification" prefHeight="42.0" prefWidth="43.0">
+                     <graphic>
+                        <ImageView fitHeight="45.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <Image url="@../../../notification.png" />
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToProfile" prefHeight="41.0" prefWidth="46.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@/default-user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#switchToActivites" prefHeight="41.0" prefWidth="142.0" text="Activités">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#disconnect" prefHeight="41.0" prefWidth="137.0" text="Se déconnecter" />
+               </children>
+            </HBox>
+         </right>
+      </BorderPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</AnchorPane>
